@@ -1,46 +1,47 @@
 # FTP Brute Force Tool
+![carbon](https://github.com/Jon3sjns/FTPBF/assets/45759837/542c82bd-fc20-468f-b47c-10f14a6dfe54)
 
-![FTP Brute Force Tool](https://raw.githubusercontent.com/username/repo/master/ftp_brute_force_tool.png)
+**FTP Brute Force Tool** is a simple Python script for conducting brute force attacks on FTP services. It allows you to test multiple passwords from a wordlist against an FTP server to attempt to gain access.
 
-**FTP Brute Force Tool** adalah skrip Python sederhana untuk melakukan serangan brute force pada layanan FTP. Ini memungkinkan Anda untuk menguji banyak password dari sebuah wordlist terhadap sebuah server FTP untuk mencoba masuk ke dalamnya.
+## Usage
 
-## Penggunaan
+Ensure you have Python installed on your system. Then, follow the steps below:
 
-Pastikan Anda telah menginstal Python di sistem Anda. Kemudian, ikuti langkah-langkah di bawah ini:
-
-1. **Persiapan Lingkungan:**
-   - Pastikan Anda telah menginstal modul `ftplib` yang diperlukan. Jika belum, instal dengan menjalankan perintah berikut di terminal:
+1. **Environment Setup:**
+   - Make sure you have installed the required `ftplib` module. If not, install it by running the following command in the terminal:
      ```
      pip install ftplib
      ```
 
-2. **Menjalankan Skrip:**
-   - Unduh Repository Ini.
-   - Buka terminal atau command prompt di direktori di mana skrip tersebut disimpan.
-   - Jalankan skrip dengan perintah berikut:
+2. **Running the Script:**
+   - Download this Repository.
+   - Open a terminal or command prompt in the directory where the script is saved.
+   - Run the script with the following command:
      ```
      python main.py -H [target_host] -u [target_username] -wl [wordlist_path]
      ```
-     - `[target_host]`: Alamat host target FTP.
-     - `[target_username]`: Nama pengguna target FTP.
-     - `[wordlist_path]` (opsional): Path ke file wordlist yang berisi daftar kata sandi yang akan dicoba. Jika tidak disediakan, skrip akan menggunakan file `wordlist.txt` di direktori yang sama.
+     - `[target_host]`: The target FTP host address.
+     - `[target_username]`: The target FTP username.
+     - `[wordlist_path]` (optional): The path to the wordlist file containing the list of passwords to be tried. If not provided, the script will use the `wordlist.txt` file in the same directory.
 
-## Contoh Penggunaan
+## Example Usage
 
-python main.py -H ftp.example.com -u user -wl my_wordlist.txt
+```
+python main.py -H ftp.example.com -u user -wl wordlist.txt
+```
 
+## Notes
 
-## Catatan
+- This script is created for educational and security testing purposes. Use it wisely and only for testing on systems you have permission to conduct testing on.
 
-- Skrip ini dibuat untuk tujuan pendidikan dan pengujian keamanan. Gunakan dengan bijak dan hanya untuk tes pada sistem yang Anda miliki izin untuk melakukan uji coba.
+- This script uses Python's built-in `argparse` module to handle command-line arguments. Make sure to run the script with the appropriate arguments as described in the "Running the Script" section.
 
-- Skrip ini menggunakan modul bawaan Python `argparse` untuk menangani argumen baris perintah. Pastikan Anda menjalankan skrip dengan argumen yang sesuai seperti yang dijelaskan di bagian "Menjalankan Skrip".
+## Contributions
 
-## Kontribusi
+If you find any bugs or have suggestions for improvements, feel free to create an "Issue" or "Pull Request" in this repository.
 
-Jika Anda menemukan bug atau memiliki saran perbaikan, jangan ragu untuk membuat "Issue" atau "Pull Request" di repositori ini.
+## License
 
-## Lisensi
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
 
